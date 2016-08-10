@@ -16,6 +16,9 @@ To do all of this at once, run these commands:
     bash ./accessmaplite-20-fetch.sh
     bash ./accessmaplite-30-deploy.sh
 
+If you are running on Ubuntu (16.04), you can install all the dependencies you need by running
+    bash ./accessmaplite-00-setup.sh
+
 ## Current build status
 
 | build config | status |
