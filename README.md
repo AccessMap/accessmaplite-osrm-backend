@@ -2,6 +2,20 @@
 
 The Open Source Routing Machine is a high performance routing engine written in C++11 designed to run on OpenStreetMap data.
 
+## AccessMap (lite) Notes
+
+The root directory contains 3 deployment scripts for setting up a Seattle test
+example. When run in order, they will (1) compile OSRM and copy over the
+profile lua scripts, (2) fetch and process elevation data from the USGS DEM 1/3
+arc second dataset, and (3) extract/contract/routed, as described below in the
+standard documentation (routed finally runs a server that accepts routing
+requests).
+
+To do all of this at once, run these commands:
+    bash ./accessmaplite-10-build.sh
+    bash ./accessmaplite-20-fetch.sh
+    bash ./accessmaplite-30-deploy.sh
+
 ## Current build status
 
 | build config | status |
